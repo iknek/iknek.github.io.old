@@ -18,13 +18,15 @@ const sectionStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     textAlign: 'center',
-    border: '1px solid black'
+    backgroundColor: '#1D1B18',
+    border: '10px solid white',
+    textColor:  '#EAFE72'
 };
 
 const linkStyle = {
     textDecoration: 'none',
     fontSize: '24px',
-    color: 'black'
+    color: '#EAFE72',
 };
 
 const Home = () => (
