@@ -1,3 +1,8 @@
+function isMobileDevice() {
+    const mobileWidth = 768; // You can adjust this value to suit your needs
+    return window.innerWidth <= mobileWidth;
+}
+
 const styles = {
     containerStyle: {
         display: 'flex',
@@ -14,12 +19,12 @@ const styles = {
     },
     linkStyle: {
         textDecoration: 'none',
-        fontSize: '24px',
+        fontSize: isMobileDevice() ? '16px' : '24px', // Reduce font size for mobile devices
         color: '#EAFE72',
     },
     buttonStyle: {
         textDecoration: 'none',
-        fontSize: '24px',
+        fontSize: isMobileDevice() ? '16px' : '24px', // Reduce font size for mobile devices
         color: '#EAFE72',
         border: '1px solid #EAFE72',
         borderRadius: '5px',

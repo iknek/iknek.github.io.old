@@ -153,17 +153,17 @@ const centerText = Object.assign({}, styles.linkStyle, {
 const Home = () => (
     <div style={containerStyle}>
         <div style={sectionStyle}>
-            <Link to="/about" style={styles.linkStyle}>
+            <Link to="/about" style={centerText}>
                 <FlipText text="About Me" />
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/page2" style={styles.linkStyle}>
+            <Link to="/resume" style={centerText}>
                 <FlipText text="My Resume" />
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/contact" style={styles.linkStyle}>
+            <Link to="/contact" style={centerText}>
                 <FlipText text="Get in Touch" />
             </Link>
         </div>
@@ -187,7 +187,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<Page1 />} />
-                <Route path="/page2" element={<Page2 />} />
+                <Route path="/resume" element={<Page2 />} />
                 <Route path="/contact" element={<Page3 />} />
                 <Route path="/funzone" element={<Page4 />} />
             </Routes>
