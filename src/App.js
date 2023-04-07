@@ -1,5 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+import Page4 from './pages/Page4';
 
 const containerStyle = {
     display: 'grid',
@@ -26,7 +30,7 @@ const linkStyle = {
 const Home = () => (
     <div style={containerStyle}>
         <div style={sectionStyle}>
-            <Link to="/page1" style={linkStyle}>Page 1</Link>
+            <Link to="/page1"style={linkStyle}>Page 1</Link>
         </div>
         <div style={sectionStyle}>
             <Link to="/page2" style={linkStyle}>Page 2</Link>
@@ -39,11 +43,6 @@ const Home = () => (
         </div>
     </div>
 );
-
-const Page1 = () => <div><h1>Page 1</h1><Link to="/" style={linkStyle}>Go back</Link></div>;
-const Page2 = () => <div><h1>Page 2</h1><Link to="/" style={linkStyle}>Go back</Link></div>;
-const Page3 = () => <div><h1>Page 3</h1><Link to="/" style={linkStyle}>Go back</Link></div>;
-const Page4 = () => <div><h1>Page 4</h1><Link to="/" style={linkStyle}>Go back</Link></div>;
 
 function App() {
     return (
