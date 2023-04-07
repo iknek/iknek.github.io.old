@@ -1,43 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
-
-const containerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: '#1D1B18',
-    justifyContent: 'center',
-    textAlign: 'center',
-    height: '100vh',
-    padding: '20%',
-    boxSizing: 'border-box',
-    color: '#EAFE72',
-};
-
-const linkStyle = {
-    textDecoration: 'none',
-    fontSize: '24px',
-    color: '#EAFE72',
-};
-
-
-const buttonStyle = {
-    textDecoration: 'none',
-    fontSize: '24px',
-    color: '#EAFE72',
-    border: '1px solid #EAFE72',
-    borderRadius: '5px',
-    padding: '10px',
-    fontFamily: 'Cutive Mono',
-    backgroundColor: 'transparent',
-    cursor: 'pointer'
-};
+import styles from '../styleSheets/styles';
 
 class Page4 extends Component {
     render() {
         return (
-            <div style={containerStyle}>
+            <div style={styles.containerStyle}>
                 <h1 style={{ fontWeight: 'bold' }}>
                     Sorry, I haven't come up with anything fun yet!
                 </h1>
@@ -57,19 +24,18 @@ class Page4 extends Component {
                         href="https://github.com/iknek/iknek.github.io"
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={linkStyle}
+                        style={styles.linkStyle}
                     >
                         github.com/iknek/iknek.github.io
-                     </a>
+                    </a>
                 </h3>
 
-                <button onClick={() => window.location.href = '/' } style={buttonStyle}>
+                <button onClick={() => window.location.href = '/' } style={styles.buttonStyle}>
                     Go back
                 </button>
             </div>
         );
     }
 }
-
 
 export default Page4;

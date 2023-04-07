@@ -5,6 +5,7 @@ import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import FlipText from './FlipText';
+import styles from './styleSheets/styles';
 
 const containerStyle = {
     display: 'grid',
@@ -145,36 +146,29 @@ const getRandomBoringThing = () => {
     }
 };
 
-
-const linkStyle = {
-    textDecoration: 'none',
-    fontSize: '38px',
-    color: '#EAFE72',
-    textAlign: 'center',
-};
-
-const leftSectionStyle = Object.assign({}, linkStyle);
-const rightSectionStyle = Object.assign({}, linkStyle);
+const centerText = Object.assign({}, styles.linkStyle, {
+    textAlign: 'center'
+});
 
 const Home = () => (
     <div style={containerStyle}>
         <div style={sectionStyle}>
-            <Link to="/page1" style={leftSectionStyle}>
+            <Link to="/about" style={styles.linkStyle}>
                 <FlipText text="About Me" />
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/page2" style={rightSectionStyle}>
+            <Link to="/page2" style={styles.linkStyle}>
                 <FlipText text="My Resume" />
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/contact" style={leftSectionStyle}>
+            <Link to="/contact" style={styles.linkStyle}>
                 <FlipText text="Get in Touch" />
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/funzone" style={rightSectionStyle}>
+            <Link to="/funzone" style={centerText}>
                 <FlipText
                     textArray={Array(100)
                         .fill(0)
@@ -192,7 +186,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/page1" element={<Page1 />} />
+                <Route path="/about" element={<Page1 />} />
                 <Route path="/page2" element={<Page2 />} />
                 <Route path="/contact" element={<Page3 />} />
                 <Route path="/funzone" element={<Page4 />} />
