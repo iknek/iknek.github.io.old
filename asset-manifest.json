@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/iknek.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/iknek.github.io/static/js/main.42b3bc32.js",
+    "static/js/787.28cb0dcd.chunk.js": "/iknek.github.io/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/iknek.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/iknek.github.io/index.html",
+    "main.073c9b0a.css.map": "/iknek.github.io/static/css/main.073c9b0a.css.map",
+    "main.42b3bc32.js.map": "/iknek.github.io/static/js/main.42b3bc32.js.map",
+    "787.28cb0dcd.chunk.js.map": "/iknek.github.io/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.42b3bc32.js"
+  ]
+}
