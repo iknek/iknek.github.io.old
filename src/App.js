@@ -174,7 +174,7 @@ const Home = () => (
             </Link>
         </div>
         <div style={sectionStyle}>
-            <Link to="/page4" style={rightSectionStyle}>
+            <Link to="/funzone" style={rightSectionStyle}>
                 <FlipText
                     textArray={Array(100)
                         .fill(0)
@@ -195,7 +195,7 @@ function App() {
                 <Route path="/page1" element={<Page1 />} />
                 <Route path="/page2" element={<Page2 />} />
                 <Route path="/contact" element={<Page3 />} />
-                <Route path="/page4" element={<Page4 />} />
+                <Route path="/funzone" element={<Page4 />} />
             </Routes>
         </Router>
     );

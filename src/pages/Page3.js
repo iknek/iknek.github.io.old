@@ -36,7 +36,7 @@ class Page3 extends Component {
     render() {
         return (
             <div style={containerStyle}>
-                <h1>Here's some other places you can find or reach me!</h1>
+                <h1>Here's some places you can find and/or reach me!</h1>
                 <h2>
                     LinkedIn:{' '}
                     <a
@@ -58,8 +58,8 @@ class Page3 extends Component {
                     >
                         imad.alihodzic@yahoo.com
                     </a>
-
                 </h2>
+                <h2> Phone: (+46) 076 872 54 52 </h2>
                 <Link to="/" style={buttonStyle}>Go back</Link>
             </div>
         );
