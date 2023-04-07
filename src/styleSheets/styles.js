@@ -1,5 +1,5 @@
 function isMobileDevice() {
-    const mobileWidth = 768; // You can adjust this value to suit your needs
+    const mobileWidth = 1090; // You can adjust this value to suit your needs
     return window.innerWidth <= mobileWidth;
 }
 
@@ -12,6 +12,7 @@ const styles = {
         backgroundColor: '#1D1B18',
         justifyContent: 'center',
         textAlign: 'center',
+        fontSize: '15px',
         boxSizing: 'border-box',
         marginTop: '5%',
         marginBottom: '5%',
@@ -19,12 +20,12 @@ const styles = {
     },
     linkStyle: {
         textDecoration: 'none',
-        fontSize: isMobileDevice() ? '16px' : '24px', // Reduce font size for mobile devices
+        fontSize: isMobileDevice() ? '13px' : '24px', // Reduce font size for mobile devices
         color: '#EAFE72',
     },
     buttonStyle: {
         textDecoration: 'none',
-        fontSize: isMobileDevice() ? '16px' : '24px', // Reduce font size for mobile devices
+        fontSize: isMobileDevice() ? '13px' : '24px', // Reduce font size for mobile devices
         color: '#EAFE72',
         border: '1px solid #EAFE72',
         borderRadius: '5px',
