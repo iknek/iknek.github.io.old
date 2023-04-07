@@ -1,0 +1,23 @@
+/* src/FlipText.css */
+.flip-text {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 42px;
+    font-family: monospace;
+}
+
+.flip-wrapper {
+    display: inline-block;
+    animation: flip 0.4s ease-in-out forwards;
+    backface-visibility: hidden;
+    transform-origin: 50% 100%;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
