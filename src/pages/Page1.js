@@ -22,7 +22,8 @@ const buttonStyle = {
     border: '1px solid #EAFE72',
     borderRadius: '5px',
     padding: '10px',
-    backgroundColor: '#1D1B18',
+    fontFamily: 'Cutive Mono',
+    backgroundColor: 'transparent',
     cursor: 'pointer'
 };
 
@@ -42,7 +43,9 @@ class Page1 extends Component {
                     Outside of academics and work, I have built computers since the age of 14, and been an active member on the Swedish tech forum ‘Sweclockers’ since 15. At 14, I wrote a guide on ifixit.com which currently has over 55,000 views. I'm also an active member of the fixed gear bike community in Sweden, and currently admin of the Fixed Gear Gothenburg Facebook group.
                     Kind regards, Imad Alihodzic
                 </blockquote>
-                <Link to="/" style={buttonStyle}>Go back</Link>
+                <button onClick={() => window.location.href = '/' } style={buttonStyle}>
+                    Go back
+                </button>
             </div>
         );
     }

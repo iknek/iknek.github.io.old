@@ -29,6 +29,7 @@ const buttonStyle = {
     border: '1px solid #EAFE72',
     borderRadius: '5px',
     padding: '10px',
+    fontFamily: 'Cutive Mono',
     backgroundColor: 'transparent',
     cursor: 'pointer'
 };
@@ -61,7 +62,10 @@ class Page4 extends Component {
                         github.com/iknek/iknek.github.io
                      </a>
                 </h3>
-                <Link to="/" style={buttonStyle}>Go back</Link>
+
+                <button onClick={() => window.location.href = '/' } style={buttonStyle}>
+                    Go back
+                </button>
             </div>
         );
     }

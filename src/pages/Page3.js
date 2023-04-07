@@ -22,6 +22,7 @@ const buttonStyle = {
     border: '1px solid #EAFE72',
     borderRadius: '5px',
     padding: '10px',
+    fontFamily: 'Cutive Mono',
     backgroundColor: 'transparent',
     cursor: 'pointer'
 };
@@ -60,7 +61,9 @@ class Page3 extends Component {
                     </a>
                 </h2>
                 <h2> Phone: (+46) 076 872 54 52 </h2>
-                <Link to="/" style={buttonStyle}>Go back</Link>
+                <button onClick={() => window.location.href = '/' } style={buttonStyle}>
+                    Go back
+                </button>
             </div>
         );
     }
