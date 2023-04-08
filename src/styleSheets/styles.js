@@ -20,12 +20,12 @@ const styles = {
     },
     linkStyle: {
         textDecoration: 'none',
-        fontSize: isMobileDevice() ? '13px' : '24px', // Reduce font size for mobile devices
+        fontSize: isMobileDevice() ? '13px' : '20px', // Reduce font size for mobile devices
         color: '#EAFE72',
     },
     buttonStyle: {
         textDecoration: 'none',
-        fontSize: isMobileDevice() ? '13px' : '24px', // Reduce font size for mobile devices
+        fontSize: isMobileDevice() ? '13px' : '20px', // Reduce font size for mobile devices
         color: '#EAFE72',
         border: '1px solid #EAFE72',
         borderRadius: '5px',

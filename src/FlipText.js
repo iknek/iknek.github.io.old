@@ -67,11 +67,11 @@ const FlipText = ({
         <div style={FlipTextStyle}>
             {autoChange ? (
                 <>
-                    <span>Need a break from </span>
+                    <span>Bored of </span>
                     <span>{currentText.split('\n').map((line, index) => (
                         <span key={index}>{line}</span>
                     ))}</span>
-                    <span>? </span>
+                    <span>?</span>
                 </>
             ) : (
                 currentText.split('\n').map((line, index) => (

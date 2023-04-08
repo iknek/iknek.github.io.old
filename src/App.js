@@ -147,7 +147,7 @@ const getRandomBoringThing = () => {
 };
 
 const centerText = Object.assign({}, styles.linkStyle, {
-    textAlign: 'center'
+    textAlign: 'center',
 });
 
 const Home = () => (
