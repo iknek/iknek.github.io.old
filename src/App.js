@@ -11,7 +11,7 @@ const containerStyle = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gridTemplateRows: '1fr 1fr',
-    height: '100vh',
+    height: '100vmin',
     width: '100%'
 };
 

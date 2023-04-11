@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import styles from '../styleSheets/styles';
 
+
+const centerText = Object.assign({}, styles.containerStyle, {
+    paddingLeft: '10%',
+    paddingRight: '10%',
+    textAlign: 'center',
+});
+
 class Page4 extends Component {
     render() {
         return (
-            <div style={styles.containerStyle}>
+            <div style={centerText}>
                 <h1 style={{ fontWeight: 'bold' }}>
                     Sorry, I haven't come up with anything fun yet!
                 </h1>
