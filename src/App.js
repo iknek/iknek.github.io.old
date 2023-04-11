@@ -11,8 +11,8 @@ const containerStyle = {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
     gridTemplateRows: '1fr 1fr',
-    height: '100vmin',
-    width: '100%'
+    height: '100vh',
+    width: '100vm'
 };
 
 const sectionStyle = {
